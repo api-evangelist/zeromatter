@@ -1,8 +1,24 @@
 aid: zeromatter
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zeromatter.png
 name: Zeromatter
-description: 'Zeromatter is a company surfaced as a portfolio company of spark-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Zeromatter is a deep-tech simulation platform that lets teams build, test, and train autonomous
+  systems in one environment. It provides high-performance sensor simulation, automatic environment
+  generation, and multi-agent co-simulation frameworks used to accelerate development across autonomy,
+  aerospace, automotive, agriculture, drones, and green energy. Backed by Spark Capital, Zeromatter
+  currently exposes a marketing and company site only; no public developer API, documentation, or SDKs
+  were found during enrichment. This profile is maintained in the API Evangelist network as a lead
+  pending any future public API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/zeromatter/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Deep Tech
+- Simulation
+- Autonomy
+- Robotics
+- Aerospace
+- Automotive
+- Drones
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zeromatter-domain-security.yml
 - type: Website
   url: https://zeromatter.com
+- type: Support
+  url: https://zeromatter.com/company#contact
+- type: PrivacyPolicy
+  url: https://zeromatter.com/doc/privacy_policy.pdf
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
